@@ -26,8 +26,6 @@ Our primary focus is on data related to the Andhra Pradesh region, aiming to pre
 
 - **User Dashboards**: Users have access to dashboards that track their contributions, including progress tracking features, a streak system to encourage regular participation, and bonus courses to incentivize engagement.
 
-Here’s the updated section for the backend in your README file:
-
 ## Technology Stack
 
 - **Frontend**: 
