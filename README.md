@@ -45,6 +45,11 @@ Here’s the updated section for the backend in your README file:
   - Applied to extract place names from the text, audio, and video data provided by users.
 
 ## How to Run
+Since your backend is built with Node.js, the command to start the backend should reflect that instead of using Python. Here’s the corrected section for running the application:
+
+---
+
+## How to Run
 
 1. **Clone the repository**:
    ```bash
@@ -53,19 +58,20 @@ Here’s the updated section for the backend in your README file:
 
 2. **Install dependencies**:
    ```bash
-   npm install  # For frontend
-   pip install -r requirements.txt  # For backend
+   npm install  # For both frontend and backend
    ```
 
 3. **Set up PostgreSQL**:
    Ensure that a PostgreSQL instance is running and properly configured with the required tables for data storage.
 
 4. **Run the application**:
-   - Start the backend: 
+
+   - **Start the backend**:
      ```bash
-     python app.py
+     node server.js  # or whatever your entry point file is (e.g., index.js)
      ```
-   - Start the frontend:
+
+   - **Start the frontend**:
      ```bash
      npm start
      ```
