@@ -94,7 +94,7 @@ Since your backend is built with Node.js, the command to start the backend shoul
 - **Abhinaya**: Junior Backend Developer
 - **Gunasekhar**: Senior NLP Developer
 - **Pavan**: Senior NLP Developer
-- **Jyothika**: Senior NLP Developer
+- **Jyothika**: Junior NLP Developer
 - **Charishma**: Senior Frontend Developer
 - **Padma**: Junior Frontend Developer
 - **Akshay**: Junior Frontend Developer
