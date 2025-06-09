@@ -1,0 +1,106 @@
+/* Navbar Styles */
+.navba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #7469B6;
+  color: #fff;
+  position: relative;
+}
+
+.navba-logo img {
+  height: 60px;
+}
+
+/* Center the links in desktop */
+.navba-links {
+  display: flex;
+  gap: 11px;
+  list-style: none;
+  margin: 0 auto;  /* Center links */
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navba-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navba-links li a:hover {
+  color: #f0c040;
+}
+
+/* Navbar Toggle Button */
+.navba-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navba-toggle {
+    display: block;
+  }
+
+  .navba-links {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #7469B6;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    left: auto;
+    transform: none;
+  }
+
+  .navba-links.active {
+    display: flex;
+  }
+}
+
+/* Streak Styles */
+.navba-streak {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: auto; /* Push streak to right */
+}
+
+/* Desktop Streak - Show in Navbar */
+.desktop-streak {
+  display: flex;
+}
+
+/* Mobile Streak - Hide by default */
+.mobile-streak {
+  display: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+
+/* Show Streak in Sidebar on Mobile */
+@media (max-width: 768px) {
+  .desktop-streak {
+    display: none;
+  }
+
+  .mobile-streak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

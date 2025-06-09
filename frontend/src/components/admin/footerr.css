@@ -1,0 +1,36 @@
+.footerr {
+  background-color: #7469B6; /* Updated color theme */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerr p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-logo {
+  width: 50px; /* Adjust as needed */
+  height: 50px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .footerr p {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+}

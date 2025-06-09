@@ -1,0 +1,178 @@
+/* General Styles */
+.home-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.home-container body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Home Page Layout */
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+  }
+  
+  /* Left Section */
+  .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .matter {
+    margin-left: 20px;
+  }
+  
+  .home-container h1 {
+    font-size: 3rem; /* Default size for larger screens */
+  }
+  
+  .highlight-text {
+    color: #8976FD; /* Different color for Data Dialect */
+    font-size: 4rem; /* Default size for larger screens */
+  }
+  
+  .animated-matter p {
+    font-size: 1.2rem;  /* Default size for larger screens */
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  
+  .know-more {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #8976FD;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .know-more:hover {
+    background-color: #7662fb;
+  }
+  
+  /* Right Section */
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  
+  /* About Section */
+  .about-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  /* Join Us Button */
+.join-us-wrapper {
+  margin: 20px auto 40px; /* Add 40px bottom margin to create space above the footer */
+  text-align: center;
+}
+
+.join-us-link {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #6a5acd, #8976fd);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-us-link:hover {
+  background: linear-gradient(90deg, #8976fd, #6a5acd);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+  
+  /* Media Query for Tablet and Mobile View */
+  @media (max-width: 1024px) {
+    .home-container {
+      flex-direction: row;  /* Keep side by side in tablet */
+      align-items: center;
+      height: auto;
+    }
+  
+    .left-side {
+      text-align: center;
+      padding: 10px;  /* Adjust padding */
+    }
+  
+    /* Adjust text size for tablet */
+    .home-container h1 {
+      font-size: 3rem; /* Adjust text size for tablet */
+    }
+  
+    .highlight-text {
+      font-size: 3rem; /* Adjust text size for tablet */
+    }
+  
+    .animated-matter p {
+      font-size: 1.2rem; /* Adjust text size for tablet */
+    }
+  
+    .know-more {
+      padding: 8px 16px;
+      font-size: 0.9rem;  /* Smaller button on tablet */
+      margin-top: 20px;
+    }
+  
+    /* Ensure the right image is visible on tablet view */
+    .right-side {
+      display: flex;  /* Make sure the right image is visible */
+    }
+  
+    .about-section {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust text size for mobile */
+    .home-container h1 {
+      font-size: 2.5rem; /* Adjust text size for mobile */
+    }
+  
+    .highlight-text {
+      font-size: 3.5rem; /* Adjust text size for mobile */
+    }
+  
+    .animated-matter p {
+      font-size: 1.3rem; /* Adjust text size for mobile */
+    }
+  
+    .know-more {
+      padding: 8px 16px;
+      font-size: 0.9rem;  /* Smaller button on mobile */
+      margin-top: 20px;
+    }
+  
+    /* Hide the right image on mobile view */
+    .right-side {
+      display: none; /* Hide image on mobile */
+    }
+  
+    .about-section {
+      margin-top: 20px;
+    }
+  }  
