@@ -5,8 +5,23 @@ __pycache__/
 .env
 *.sqlite3
 
-# VSCode
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Data files (optional, if you don't want to track datasets)
+*.csv
+*.tsv
+*.xls
+*.xlsx
+
+# Logs
+*.log
+
+# VSCode/IDE
 .vscode/
+.idea/
 
 # OS files
 .DS_Store
