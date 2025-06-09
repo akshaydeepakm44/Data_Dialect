@@ -1,0 +1,141 @@
+/* Container */
+.roadmap-d-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    height: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Content Section */
+  .roadmap-content {
+    flex: 1;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-right: 2rem;
+  }
+  
+  .content-box h3,
+  .content-placeholder h3 {
+    color: #8a75fc;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .content-box p,
+  .content-placeholder p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .animate-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* SVG Roadmap */
+  .roadmap-d-shape {
+    position: relative;
+    flex: 1;
+  }
+  
+  .roadmap-d-svg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: inherit;
+  }
+  
+  /* Stops (Dots) */
+  .roadmap-stop {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .stop-circle {
+    fill: #8a75fc;
+    transition: fill 0.3s ease, transform 0.3s ease;
+  }
+  
+  .stop-text {
+    font-size: 0.9rem;
+    fill: #333;
+    font-weight: bold;
+  }
+  
+  /* Active State */
+  .roadmap-stop.active .stop-circle {
+    fill: #ff6f61;
+    transform: scale(1);
+  }
+  
+  .roadmap-stop:hover .stop-circle {
+    fill: #ff6f61;
+    transform: scale(1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design for Tablet and Mobile */
+/* Responsive Design for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .roadmap-d-container { /* Stack vertically on tablets */
+      align-items: center;
+    }
+  
+    .roadmap-content {
+      margin-right: 0; /* Remove the right margin for tablet */
+      margin-bottom: 1.5rem;
+      width: 90%; /* Adjust width to fit the screen */
+    }
+  
+    .roadmap-d-svg {
+      max-width: 250px; /* Adjust size for tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .roadmap-d-container {
+        flex-direction: column; /* Stack vertically on tablets */
+        align-items: center;
+      }
+    .roadmap-content {
+      order: 2; /* Place content below the SVG */
+      margin-top: 1rem;
+    }
+  
+    .roadmap-d-shape {
+      order: 1; /* Move the SVG up */
+      margin-bottom: 1rem;
+    }
+  
+    .roadmap-d-svg {
+      max-width: 180px; /* Adjust for mobile */
+    }
+  
+    .stop-text {
+      font-size: 0.75rem; /* Reduce font size for mobile */
+    }
+  
+    h3 {
+      font-size: 1.5rem; /* Smaller headings for mobile */
+    }
+  
+    p {
+      font-size: 0.9rem; /* Smaller paragraph text */
+    }
+  }
+  

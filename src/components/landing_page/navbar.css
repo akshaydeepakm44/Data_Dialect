@@ -1,0 +1,63 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7469B6;
+    color: #fff;
+    padding: 0px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    border-radius: 0%;
+}
+
+/* Logo */
+.navbar-logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* Nav Links - Desktop */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-links li a:hover {
+    color: #f0c040;
+}
+
+/* Get Started Button */
+.navbar-button .btn {
+    background-color: #f0c040;
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navbar-button .btn:hover {
+    background-color: #d39e34;
+}
+
+/* Mobile View - Only Logo and Get Started Button */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-button {
+        display: block;
+    }
+}

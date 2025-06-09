@@ -1,0 +1,148 @@
+/* src/components/Signup.css */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+}
+
+.left {
+  flex: 2; /* Left side takes more space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #007bff; /* Adjust background for contrast */
+  color: white; /* Set text color to white */
+  padding: 20px; /* Added padding for spacing */
+}
+
+.left_content {
+  width: 100%; /* Take full width of the left side */
+  max-width: 400px; /* Optional: limit max width for the form */
+  text-align: center; /* Center the text inside the form */
+  padding: 20px;
+}
+
+.right {
+  flex: 1; /* Right side takes less space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: black; /* Set text color to black for right side */
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.signup-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.signup-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.signup-container button {
+  padding: 10px;
+  width: 100%;
+  background-color: #A594F9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-container button:hover {
+  background-color: #0056b3;
+}
+
+.signup-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.bottom-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+     /* Added padding for better spacing */
+  }
+
+  .left {
+    flex: 1; /* Make the left part take full width */
+    padding: 20px;
+  }
+
+  .right {
+    display: none; /* Hide the right part on mobile */
+  }
+
+  .logo {
+    width: 80px; /* Smaller logo on mobile */
+    margin-bottom: 15px;
+  }
+
+  .signup-container h2 {
+    font-size: 22px; /* Adjust heading size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .signup-container input {
+    font-size: 14px; /* Smaller input font size */
+    padding: 12px; /* Adjust padding for better mobile usability */
+  }
+
+  .signup-container button {
+    font-size: 14px; /* Smaller button font size */
+    padding: 12px;
+  }
+
+  .bottom-image {
+    max-width: 300px; /* Adjust bottom image size on mobile */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .left_content {
+    max-width: 100%; /* Allow content to take full width */
+    padding: 10px;
+  }
+
+  .signup-container h2 {
+    font-size: 20px; /* Smaller heading font size */
+  }
+
+  .signup-container input {
+    font-size: 12px; /* Further decrease font size for inputs */
+    padding: 10px; /* Further adjust padding for better fit */
+  }
+
+  .signup-container button {
+    font-size: 12px; /* Smaller font size for buttons */
+    padding: 10px;
+  }
+
+  .bottom-image {
+    max-width: 250px; /* Adjust bottom image size for very small screens */
+  }
+}
