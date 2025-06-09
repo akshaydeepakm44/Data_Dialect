@@ -1,0 +1,39 @@
+# === Backend Python ===
+backend/__pycache__/
+backend/*.py[cod]
+backend/*.egg-info/
+backend/.env
+backend/*.sqlite3
+
+# Backend virtual environments
+backend/venv/
+backend/ENV/
+backend/env/
+
+# Backend data files (optional, if you don't want to track datasets)
+backend/*.csv
+backend/*.tsv
+backend/*.xls
+backend/*.xlsx
+
+# Backend logs
+backend/*.log
+
+# === Frontend Node/React ===
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# Frontend logs and misc
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.env
+
+# === Common IDE/Editor ===
+.vscode/
+.idea/
+
+# === OS files ===
+.DS_Store
+Thumbs.db
