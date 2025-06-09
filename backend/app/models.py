@@ -46,10 +46,7 @@ class VideoUser(db.Model):
     def __repr__(self):
         return f"<VideoUser id={self.id}, submitted_by={self.submitted_by}, status={self.submission_status}>"
     
-    
 
-
-    
 class AudioUser(db.Model):
     __tablename__ = 'audio_user'  # Ensure this matches your actual table name
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
